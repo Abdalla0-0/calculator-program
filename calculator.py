@@ -105,4 +105,7 @@ while True:
       
 print(f"\n \033[1;4;32mAnswer: {total}\033[0m\n")
 
+#find a way to correct sqrt part and tmrw we gonna add a way for it to remember the last answers
+
+
 
