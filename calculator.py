@@ -61,6 +61,10 @@ while True:
       break
       
    elif (operator == "/"):
+      #total = float(first_number) / float(second_number)
+      if (second_number == 0):
+         print("\033[1;31mError: Division by zero is not allowed.\033[0m")
+         break
       total = float(first_number) / float(second_number)
       if total.is_integer():
          total = int(total)
@@ -87,6 +91,9 @@ while True:
          
          
    elif (operator == "//"):
+      if (second_number == 0):
+             print("\033[1;31mError: Division by zero is not allowed.\033[0m")
+             break
       total = float(first_number) // float(second_number)
       total = int(total)
       break
@@ -106,6 +113,6 @@ while True:
 print(f"\n \033[1;4;32mAnswer: {total}\033[0m\n")
 
 #find a way to correct sqrt part and tmrw we gonna add a way for it to remember the last answers
-
+#it got hard so I might need to change this if/else statements into a function to make it easier 
 
 
